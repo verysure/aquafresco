@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+html(lang="en")
+    
+    
+    
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        meta(name="description", content="")
+        meta(name="author", content="verysure")
+            
+        title AquaFresco: a device for wastewater regeneration
+        
+        //- Bootstrap Core CSS
+        link(href="css/bootstrap.min.css", rel="stylesheet")
+
+        //- Custom CSS
+        link(href="css/grayscale.css", rel="stylesheet")
+
+        //- Custom Fonts
+        link(href="font-awesome-4.2.0/css/font-awesome.min.css", rel="stylesheet", type="text/css")
+        link(href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic", rel="stylesheet", type="text/css")
+        link(href="http://fonts.googleapis.com/css?family=Montserrat:400,700", rel="stylesheet", type="text/css")
+
+
+
+    body#page-top(data-spy="scroll" data-target=".navbar-fixed-top")
+        
+        //- Navigation
+        nav.navbar.navbar-custom.navbar-fixed-top(role="navigation")
+            .container
+                .navbar-header
+                    button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-main-collapse")
+                        i.fa.fa-bars
+                    a.navbar-brand.page-scroll(href="#page-top").
+                        Aqua#[span.light Fresco]
+
+                //- Collect the nav links, forms, and other content for toggling
+                .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+                    ul.nav.navbar-nav
+                        //- Hidden li included to remove active class from about link when scrolled up past about section
+                        li.hidden: a(href="#page-top")
+                        li: a.page-scroll(href="#about") About
+                        li: a.page-scroll(href="#team") Team
+                        li: a.page-scroll(href="#contact") Contact
+                  
+
+        //- Intro Header
+        header.intro
+            .intro-body: .container: .row
+                .col-md-8.col-md-offset-2
+                    h1.brand-heading.
+                        Aqua#[span.light Fresco]
+                    p.intro-text.
+                        Welcome to the future of dish washing. <br>
+                        A device for wastewater regeneration
+                        
+                    a.btn.btn-circle.page-scroll(href="#about")
+                        i.fa.fa-angle-double-down.animated
+
+
+
+
+        //- About Section
+        section#about.container.content-section
+            .row: .col-lg-8.col-lg-offset-2
+                h2.text-center About Aqua#[span.light Fresco]
+                p.
+                    Water scarcity has become one of the greatest challenges of our generation, impacting billions of people.
+                    Our solution to the problem is to improve the efficiency of water usage,
+                    in particular, for laundry and dish washing which accounts for more than 20% of domestic water consumption. 
+                    The current cleaning process utilizes significant amount of water and detergent
+                    to remove less than 1% of hydrophobic "garbage" (grease or stain).
+                    We hypothesize that a better solution is to develop a filter which selectively
+                    takes out the "oil" and recycle the water and detergent for future cleaning.
+                    The invention won the first place of the MIT MADMAC 10K competition this year.
+
+                p.
+                    To achieve this goal, we developed a polymer foam filter, AquaFresco,
+                    which is engineered to selectively absorb hydrophobic compounds
+                    while rejecting water and detergent which can be subsequently recycled to the laundry machine.
+                    Prototype studies show that when incorporated into a household laundry
+                    machine just one batch of water and detergent can be used to wash clothes up to 7 months.
+                    We will no longer require additional water and detergent for laundry.
+                    This powerful greywater regeneration device can save thousands of liters of water per month
+                    (>20% of in-door water consumption) and kilograms of detergent which would otherwise be in the drain,
+                    polluting the environment. Potentially, this oil selective filter
+                    can also be implemented in other greywater system, for example,
+                    treating the oil-rich wastewater from the hydraulic fracturing process.    
+
+
+
+
+        //- Team Section
+        section#team.content-section.text-center
+            .download-section: .container
+                .row
+                    .col-lg-8.col-lg-offset-2
+                        h2 Meet Aqua#[span.light Fresco] Team
+                        //- p You can download Grayscale for free on the preview page at Start Bootstrap.</p>
+                        
+                .row
+                    .col-sm-4
+                        a.btn(data-toggle="modal", data-target="#chris"): figure: img(src="img/chris.jpg")
+                        br
+                        | Chris Lai
+                    .col-sm-4
+                        a.btn(data-toggle="modal", data-target="#alina"): figure: img(src="img/alina.jpg")
+                        br
+                        | Alina Rwei
+                    .col-sm-4
+                        a.btn(data-toggle="modal", data-target="#sasha"): figure: img(src="img/sasha.jpg")
+                        br
+                        | Sasha Huang
+
+
+
+        //- Modals for team members
+        #chris.modal.fade(tabindex="-1" role="dialog" aria-labelledby="test" aria-hidden="true")
+            .modal-dialog: .modal-content: .modal-body
+                //- button(type="button" class="close" data-dismiss="modal" aria-hidden="true") &times;
+                p.
+                    #[b Chris Lai] is a fourth year MIT graduate in chemical engineering.
+                    Chris Lai is a fourth year MIT graduate in chemical engineering.
+                    Chris Lai is a fourth year MIT graduate in chemical engineering.
+                    Chris Lai is a fourth year MIT graduate in chemical engineering.
+                    Chris Lai is a fourth year MIT graduate in chemical engineering.
+        
+        #alina.modal.fade(tabindex="-1" role="dialog" aria-labelledby="test" aria-hidden="true")
+            .modal-dialog: .modal-content: .modal-body
+                //- button(type="button" class="close" data-dismiss="modal" aria-hidden="true") &times;
+                p.
+                    #[b Alina Rwei] is a third year MIT graduate in Material Science.
+                    Alina Rwei is a third year MIT graduate in Material Science.
+                    Alina Rwei is a third year MIT graduate in Material Science.
+                    Alina Rwei is a third year MIT graduate in Material Science.
+                    Alina Rwei is a third year MIT graduate in Material Science.
+        
+        
+        #sasha.modal.fade(tabindex="-1" role="dialog" aria-labelledby="test" aria-hidden="true")
+            .modal-dialog: .modal-content: .modal-body
+                //- button(type="button" class="close" data-dismiss="modal" aria-hidden="true") &times;
+                p.
+                    #[b Sasha Huang] is a fourth year MIT graduate in Material Science.
+                    Sasha Huang is a fourth year MIT graduate in Material Science.
+                    Sasha Huang is a fourth year MIT graduate in Material Science.
+                    Sasha Huang is a fourth year MIT graduate in Material Science.
+                    Sasha Huang is a fourth year MIT graduate in Material Science.
+                    
+                    
+        //- Contact
+        section#contact.container.content-section.text-center
+            .row: .col-lg-8.col-lg-offset-2
+                    h2 Contact Aqua#[span.light Fresco]
+                    p.
+                        Feel free to contact our team for further information!
+                    p #[a(href="mailto:aquafresco.contact@gmail.com") aquafresco.contact@gmail.com]
+                    
+                    
+        //- Footer
+        footer    
+            .container.text-center
+                p.
+                    Copyright &copy; Aqua#[span.light Fresco] 2014 <br>
+                    Designed by #[a(href="http://www.mit.edu/~tonyw/") VerySure] with Bootstrap (grayscale) and Font Awesome <br>
+                    Photocredit to #[a(href="https://www.flickr.com/photos/allenhsin/") Yu-Hsin Chen]
+        
+                    
+                    
+        //- Javascript
+        <!-- jQuery -->
+        script(src="js/jquery.js")
+
+        <!-- Bootstrap Core JavaScript -->
+        script(src="js/bootstrap.min.js")
+
+        <!-- Plugin JavaScript -->
+        script(src="js/jquery.easing.min.js")
+
+        <!-- Custom Theme JavaScript -->
+        script(src="js/grayscale.js")
