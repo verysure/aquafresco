@@ -393,6 +393,7 @@ body {
 
 #team img {
     width: 100%;
+    margin: -30px;
 /*    -webkit-border-radius: 15%;
     -moz-border-radius: 15%;
     border-radius: 15%;
@@ -412,9 +413,24 @@ body {
 
 #teamnames {
     width: 100%;
-    margin-top: -150px;
+    /*margin-top: -150px;*/
+    margin: -110px 0 0 0;
     font-size: 35px;
     /*text-shadow: 2px 2px #ff0000;*/
+}
+
+@media(max-width:767px) {
+    #teamnames {
+        width: 100%;
+        /*margin-top: -150px;*/
+        margin: -20px 0 0 0;
+        font-size: 25px;
+        /*text-shadow: 2px 2px #ff0000;*/
+    }
+}
+
+#teamnames .col-xs-4 {
+    padding: 0;
 }
 
 .modal-content {
