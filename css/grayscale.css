@@ -410,6 +410,13 @@ body {
 }
 
 
+#teamnames {
+    width: 100%;
+    margin-top: -150px;
+    font-size: 35px;
+    /*text-shadow: 2px 2px #ff0000;*/
+}
+
 .modal-content {
     background-color: #272727;
 }
