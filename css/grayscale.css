@@ -71,7 +71,7 @@ a:focus {
 }
 
 .light {
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .navbar-custom {
@@ -306,7 +306,7 @@ a:focus {
     text-transform: uppercase;
     /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
