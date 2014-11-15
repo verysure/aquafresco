@@ -7,10 +7,11 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: 'Raleway', sans-serif;
     color: #fff;
     background-color: black;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 html {
@@ -36,7 +37,8 @@ h5,
 h6 {
     margin: 0 0 35px;
     /*text-transform: uppercase;*/
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -50,7 +52,7 @@ p {
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
-        font-size: 20px;
+        font-size: 22px;
         line-height: 1.6;
     }
 }
@@ -76,7 +78,8 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     /*text-transform: uppercase;*/
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
     background-color: #000;
 }
 
@@ -301,7 +304,8 @@ a:focus {
 
 .btn {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -447,13 +451,13 @@ body {
 
 
 #mailing-list-form {
-    width: 370px;
+    width: 350px;
     /*vertical-align: middle;*/
     margin:auto;
 }
 
 .ss-q-item-label {
-    width: 145px;
+    width: 120px;
     /*float: left;*/
 }
 #ss-submit {
