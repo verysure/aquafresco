@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 html(lang="en")
-    
-    
-    
+
+
+
     head
         meta(charset="utf-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1")
         meta(name="description", content="")
         meta(name="author", content="verysure")
-            
+
         title AquaFresco: a device for wastewater regeneration
-        
+
         //- Bootstrap Core CSS
         link(href="css/bootstrap.min.css", rel="stylesheet")
 
@@ -28,7 +28,7 @@ html(lang="en")
 
 
     body#page-top(data-spy="scroll" data-target=".navbar-fixed-top")
-        
+
         //- Navigation
         nav.navbar.navbar-custom.navbar-fixed-top(role="navigation")
             .container
@@ -45,8 +45,9 @@ html(lang="en")
                         li.hidden: a(href="#page-top")
                         li: a.page-scroll(href="#about") ABOUT
                         li: a.page-scroll(href="#team") TEAM
+                        li: a.page-scroll(href="#news") NEWS
                         li: a.page-scroll(href="#contact") CONTACT
-                  
+
 
         //- Intro Header
         header.intro
@@ -58,7 +59,7 @@ html(lang="en")
                         Reinventing laundry <br>
                         A device for wastewater regeneration
 
-                        
+
                     a.btn.btn-circle.page-scroll(href="#about")
                         i.fa.fa-angle-double-down.animated
 
@@ -84,7 +85,7 @@ html(lang="en")
                     .col-xs-4 Alina Rwei
                     .col-xs-4 Chris Lai
                     .col-xs-4 Sasha Huang
-                        
+
                 //- .row
                 //-     .col-sm-4
                 //-         a.btn(data-toggle="modal", data-target="#chris"): figure: img(src="img/chris.jpg")
@@ -99,9 +100,17 @@ html(lang="en")
                 //-         br
                 //-         | Sasha Huang
 
+        //- Team Section
+        section#news.content-section.text-center
+            .download-section: .container
+                //- .row
+                //- .col-lg-8.col-lg-offset-2
+                h2 Aqua#[span.light Fresco] News
+                p Aqua#[span.light Fresco] has just won  #[a(href="http://www.mitwaterinnovation.com/so/7KoJyDXR#/main") MIT Water Innovation Prize]! (2015/4/6)
+                img(src="img/award.png")
 
 
-                    
+
         //- Contact
         section#contact.container.content-section
             .row.text-center: .col-lg-8.col-lg-offset-2
@@ -110,16 +119,16 @@ html(lang="en")
                         Feel free to contact our team for further information!
                         <br>
                         #[a(href="mailto:aquafresco.contact@gmail.com") aquafresco.contact@gmail.com]
-                        
+
                         <br><br>
                         Or subscribe to Aqua#[span.light Fresco] mailing list:
-            
+
             //- .row: .col-sm-6.col-sm-offset-4
             #mailing-list-form
                 form#ss-form(action="https://docs.google.com/forms/d/19u7DKB9UbAF4LlOFF05F44Tuij1Q-QC8A3ikB_zDv0U/formResponse", method="POST", target="_self", onsubmit="")
-                    
+
                     ol.ss-question-list(role="list", style="padding-left: 0")
-                    
+
                         .ss-form-question.errorbox-good(role="listitem")
                             .ss-item.ss-item-required.ss-text(dir="ltr")
                                 .ss-form-entry
@@ -128,19 +137,19 @@ html(lang="en")
                                         span.ss-required-asterisk *
                                         //- label(for="itemView.getDomIdToLabel()", aria-label="(Required field)")
                                         .ss-q-help.ss-secondary-text(dir="ltr")
-                                        
+
                                     input.ss-q-short#entry_733775838(type="text", name="entry.733775838", value="", dir="auto", aria-label="Email Address  ", aria-required="true", required="", title="")
                                     .error-message#1423137905_errorMessage
                                     //- .required-message This is a required question
                         br
-                        
+
                         .ss-form-question.errorbox-good(role="listitem")
                             .ss-item.ss-text(dir="ltr")
                                 .ss-form-entry
                                     label.ss-q-item-label(for="entry_2147142041")
                                         .ss-q-title Name
                                         .ss-q-help.ss-secondary-text(dir="ltr")
-                                        
+
                                     input.ss-q-short#entry_2147142041(type="text", name="entry.2147142041", value="", dir="auto", aria-label="Name  ", title="")
                                     .error-message#338210750_errorMessage
                                     //- .required-message This is a required question
@@ -155,56 +164,56 @@ html(lang="en")
                                     .error-message#1535926511_errorMessage
                                     //- .required-message This is a required question
 
-                        
+
                         br
-                        
+
                         .ss-form-question.errorbox-good(role="listitem")
                             .ss-item.ss-paragraph-text(dir="ltr")
                                 .ss-form-entry
                                     label.ss-q-item-label(for="entry_673261613")
                                         .ss-q-title Comments
                                         .ss-q-help.ss-secondary-text(dir="ltr")
-                                            
+
                                     br
 
                                     textarea(name="entry.673261613", rows="2", cols="33", class="ss-q-long", id="entry_673261613", dir="auto", aria-label="Comments &amp; Recommendations  ")
                                     .error-message#917655397_errorMessage
                                     //- .required-message This is a required question
-                        
-                        
-                        
-                        
+
+
+
+
                         input(type="hidden", name="draftResponse", value="[,,&quot;-4344202135849621804&quot;] ")
                         input(type="hidden", name="pageHistory", value="0")
                         input(type="hidden", name="fbzx", value="-4344202135849621804")
-                        
+
                         br
                         .ss-item.ss-navigate
                             table#navigation-table: tbody: tr
                                 td.ss-form-entry.goog-inline-block#navigation-buttons(dir="ltr")
                                     input(type="submit", name="submit", value="Submit", id="ss-submit", class="jfk-button jfk-button-action ")
                                     //- .ss-password-warning.ss-secondary-text Never submit passwords through Google Forms.
-                
-            
-            
-            
-            
-            
-            
-                    
+
+
+
+
+
+
+
+
         hr
-        
-                    
+
+
         //- Footer
-        footer    
+        footer
             .container.text-center
                 p.
                     Copyright &copy; Aqua#[span.light Fresco] 2014 <br>
                     Designed by #[a(href="http://www.mit.edu/~tonyw/") VerySure] with Bootstrap (grayscale) and Font Awesome <br>
                     Photocredit to #[a(href="https://www.flickr.com/photos/allenhsin/") Yu-Hsin Chen]
-        
-                    
-                    
+
+
+
         //- Javascript
         <!-- jQuery -->
         script(src="js/jquery.js")
