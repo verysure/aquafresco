@@ -6,6 +6,33 @@
 
 
 
+// // Add api src
+// var tag = document.createElement('script');
+//
+// tag.src = "https://www.youtube.com/iframe_api";
+// var firstScriptTag = $('script')[0];
+// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+//
+// // Youtube api on load
+// var player;
+// function onYouTubePlayerReady() {
+//     player = new YT.Player('video', {
+//       events: {
+//         'onReady': onPlayerReady
+//       }
+//     });
+// }
+// function onPlayerReady(event){
+//     // event.target.playVideo();
+//     // document.id("escolta").addEvent('click', function() {
+//     //     player.playVideo();
+//     // });
+//     // document.id("pausa").addEvent('click', function() {
+//     //     player.stopVideo();
+//     // });
+//     var = player = event.target;
+// }
+
 
 // Adds events for modal
 $(document).ready(function(){
@@ -13,10 +40,8 @@ $(document).ready(function(){
     // first get the links and targets
     var modallink = $("body").find('[data-toggle="modal"]');
     var target = modallink.data("target");
-    var videourl = "http://www.youtube.com/embed/" + modallink.data("youtubeid") + "?controls=0&showinfo=0&rel=0&vq=hd720";
+    var videourl = $(target+' iframe').attr('src');
 
-    // Loads the modal iframe first
-    $(target+' iframe').attr('src', videourl);
 
     // Modal on show
     $(target).on('show.bs.modal', function(e){
@@ -27,7 +52,6 @@ $(document).ready(function(){
     $(target).on('hidden.bs.modal', function(e){
         $(target + ' iframe').attr('src', videourl);
     });
-
 
 });
 
