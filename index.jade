@@ -63,14 +63,14 @@ html(lang="en")
                     //- a.btn.btn-circle.page-scroll(href="#about")
                         i.fa.fa-angle-double-down.animated
 
-                    a.btn.btn-default(href="#", data-toggle="modal", data-target="#introvideo")
+                    a.btn.btn-default(href="#", data-toggle="modal", data-target="#intromodal")
                         i.fa.fa-youtube-play
                         | &nbsp; Intro
                     
-                    #introvideo.modal.fade(tabindex="-1", role="dialog", aria-labelledby="introvideo", aria-hidden="true")
+                    #intromodal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="intromodal", aria-hidden="true")
                         .modal-dialog: .modal-content: .modal-body
                             button.close(type="button", data-dismiss="modal", aria-hidden) &times;
-                            iframe(width="100%", height="100%", frameborder="0", src="http://www.youtube.com/embed/qInVWrgSeh0?controls=0&showinfo=0&rel=0", allowfullscreen)
+                            iframe#introvideo(width="100%", height="100%", frameborder="0", src="http://www.youtube.com/embed/qInVWrgSeh0?controls=0&showinfo=0&rel=0&enablejsapi=1", allowfullscreen)
 
 
 

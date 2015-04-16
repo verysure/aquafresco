@@ -34,6 +34,16 @@
 // }
 
 
+var player;
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('introvideo');
+    player.playVideo();
+    console.log("api_loaded");
+}
+
+
+
+
 // Adds events for modal
 $(document).ready(function(){
 
