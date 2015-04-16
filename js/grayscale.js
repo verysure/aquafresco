@@ -13,14 +13,14 @@ $(document).ready(function(){
     // first get the links and targets
     var modallink = $("body").find('[data-toggle="modal"]');
     var target = modallink.data("target");
-    var videourl = modallink.data("videourl");
+    var videourl = "http://www.youtube.com/embed/" + modallink.data("youtubeid") + "?controls=0&showinfo=0&rel=0";
 
     // Loads the modal iframe first
     $(target+' iframe').attr('src', videourl);
 
     // Modal on show
     $(target).on('show.bs.modal', function(e){
-        $(target + ' iframe').attr('src', videourl+"?autoplay=1");
+        $(target + ' iframe').attr('src', videourl+"&autoplay=1");
     });
 
     // Modal on hidden
