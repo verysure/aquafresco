@@ -4,6 +4,35 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
+
+
+// Adds events for modal
+$(document).ready(function(){
+
+    // first get the links and targets
+    var modallink = $("body").find('[data-toggle="modal"]');
+    var target = modallink.data("target");
+    var videourl = modallink.data("videourl");
+
+    // Loads the modal iframe first
+    $(target+' iframe').attr('src', videourl);
+
+    // Modal on show
+    $(target).on('show.bs.modal', function(e){
+        $(target + ' iframe').attr('src', videourl+"?autoplay=1");
+    });
+
+    // Modal on hidden
+    $(target).on('hidden.bs.modal', function(e){
+        $(target + ' iframe').attr('src', videourl);
+    });
+
+
+});
+
+
+
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
@@ -28,4 +57,3 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
-
