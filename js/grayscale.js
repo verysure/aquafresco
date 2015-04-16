@@ -13,7 +13,7 @@ $(document).ready(function(){
     // first get the links and targets
     var modallink = $("body").find('[data-toggle="modal"]');
     var target = modallink.data("target");
-    var videourl = "http://www.youtube.com/embed/" + modallink.data("youtubeid") + "?controls=0&showinfo=0&rel=0";
+    var videourl = "http://www.youtube.com/embed/" + modallink.data("youtubeid") + "?controls=0&showinfo=0&rel=0&html5=1";
 
     // Loads the modal iframe first
     $(target+' iframe').attr('src', videourl);
