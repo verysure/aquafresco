@@ -54,31 +54,33 @@ html(lang="en")
         header.intro
             .intro-body: .container: .row
                 .col-md-8.col-md-offset-2
-                    h1.brand-heading.
-                        Aqua#[span.light Fresco]
+                    //- h1.brand-heading.
+                    //-     Aqua#[span.light Fresco]
+                    img.title-img(src="img/title.png")
+                    
                     p.intro-text.
                         Reinventing laundry <br>
                         A device for wastewater regeneration
 
-
                     //- a.btn.btn-circle.page-scroll(href="#about")
                         i.fa.fa-angle-double-down.animated
 
-                    a.btn.btn-default(href="#", data-toggle="modal", data-target="#intromodal")
-                        i.fa.fa-youtube-play
-                        | &nbsp; Intro
-                    
-                    #intromodal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="intromodal", aria-hidden="true")
-                        .modal-dialog: .modal-content: .modal-body
-                            button.close(type="button", data-dismiss="modal", aria-hidden) &times;
-                            iframe#introvideo(width="100%", height="100%", frameborder="0", src="http://www.youtube.com/embed/qInVWrgSeh0?vq=hd720&controls=0&showinfo=0&rel=0&enablejsapi=1", allowfullscreen)
 
 
 
         //- About Section
         section#about.container.content-section
             .row: .col-lg-8.col-lg-offset-2
-                h2.text-center About Aqua#[span.light Fresco]
+                h2.text-center 
+                    span About Aqua#[span.light Fresco]
+                    
+                    a.btn.btn-default.mybtn(href="#", data-toggle="modal", data-target="#intromodal")
+                        i.fa.fa-youtube-play
+                    
+                    #intromodal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="intromodal", aria-hidden="true")
+                        .modal-dialog: .modal-content: .modal-body
+                            button.close(type="button", data-dismiss="modal", aria-hidden) &times;
+                            iframe#introvideo(width="100%", height="100%", frameborder="0", src="http://www.youtube.com/embed/qInVWrgSeh0?vq=hd720&controls=0&showinfo=0&rel=0&enablejsapi=1", allowfullscreen)
                 p.
                     #[b Reinventing laundry.] The current cleaning process utilizes significant amount of water and detergent to remove less than 1% of hydrophobic “garbage” (grease or stain). This highly inefficient laundry process makes an average Marriot hotel spend $10,000 on water and detergent every single week.  AquaFresco provides the state-of-the-art filtration technology which regenerates 95% of laundry wastewater. This next generation laundry device would save $0.5M/yr for hotels, capturing a market opportunity of $200M per year. We also envision applications in commercial laundry, household, military and industrial wastewater treatment, revolutionizing the current water using technology.
                     
@@ -94,19 +96,28 @@ html(lang="en")
                 h2 Meet Aqua#[span.light Fresco] Team
                 img(src="img/team_bg.jpg")
                 #teamnames.row
-                    .col-xs-4 Alina Rwei
-                    .col-xs-4 Chris Lai
-                    .col-xs-4 Sasha Huang
+                    .col-xs-4(data-toggle="popover", data-trigger="hover", data-content="description", data-placement="top") Alina Rwei
+                    .col-xs-4(data-toggle="popover", data-trigger="hover", data-content="description", data-placement="top") Chris Lai
+                    .col-xs-4(data-toggle="popover", data-trigger="hover", data-content="description", data-placement="top") Sasha Huang
 
 
         //- Team Section
         section#news.content-section.text-center
             .container
                 //- .row
-                //- .col-lg-8.col-lg-offset-2
                 h2 Aqua#[span.light Fresco] News
-                p Aqua#[span.light Fresco] has just won  #[a(href="http://www.mitwaterinnovation.com/so/7KoJyDXR#/main") MIT Water Innovation Prize]! (2015/4/6)
+                p Aqua#[span.light Fresco] has just won MIT Water Innovation Prize! #[a(href="http://www.mitwaterinnovation.com/so/7KoJyDXR#/main") link1] #[a(href="http://newsoffice.mit.edu/2015/mit-water-innovation-prize-awards-student-startups-20000-innovation-grants-0413") link2] (2015/4/6)
                 img(src="img/award.png")
+                br
+                br
+                p 
+                    | MADMEC first place winner!  #[a(href="http://www.mitwaterinnovation.com/so/7KoJyDXR#/main") link] (2014/9/19)
+                    br
+                    | MIT $100K Pitch #[a(href="http://mit100k.org/") link] 
+                    br
+                    | MIT Clean Energy Price finalist #[a(href="http://cep.mit.edu/cep/2015/teams/semifinalists/aquafresco") link]
+                    br
+                    | MassChallenge finalist  #[a(href="http://masschallenge.org/startups/2015/profile/aquafresco") link] 
 
 
 

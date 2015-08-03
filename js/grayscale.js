@@ -75,3 +75,13 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+
+
+
+
+
+// Popover
+$(function () {
+  $('[data-toggle="popover"]').popover()
+});
