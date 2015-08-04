@@ -4,6 +4,10 @@ AquaFresco
 [Website](aquafresco.co) for AquaFresco, an awarding innovative competition by Chris Lai, Sasha Huang, Alina Rwei.
 
 
+Credit
+------
+
+Webdesign by Verysure. Photocredit to Yu-Hsin Chen.
 
 License
 -------
