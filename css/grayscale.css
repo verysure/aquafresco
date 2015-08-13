@@ -164,6 +164,7 @@ a:focus {
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
+    /*background: linear-gradient( rgba(0, 0, 0, 0.5);*/
 }
 
 .intro .intro-body .brand-heading {
@@ -187,6 +188,7 @@ a:focus {
     .intro .intro-body .intro-text {
         font-size: 25px;
     }
+
 }
 
 /*Add button*/
@@ -409,9 +411,15 @@ body {
 
 /*title logo*/
 .title-img {
-    height: 150px;
+    height: auto;
+    width: 80%;
 }
-
+@media(min-width:767px) {
+    .title-img {
+        height: 150px;
+        width: auto;
+    }
+}
 #contact {
     padding-top: 100px;
 }
