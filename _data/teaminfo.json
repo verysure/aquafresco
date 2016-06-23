@@ -1,17 +1,17 @@
 [
     {
         name: "Alina Rwei",
-        title: "CTO",
+        title: "Chief Scientist",
         description: "PhD candidate in Materials Science and Engineering, MIT. Specialize in polymer science and processing.",
     },
     {
         name: "Chris Lai",
-        title: "CEO",
-        description: "PhD candidate in Chemical Engineering, MIT. Experience in continuous process and hotel business.",
+        title: "CTO",
+        description: "PhD, Chemical Engineering, MIT. Experience in continuous process and hotel business.",
     },
     {
         name: "Sasha Huang",
-        title: "COO",
-        description: "PhD candidate in Materials Science and Engineering, MIT. Specialize in material characterization and material design.",
+        title: "CEO",
+        description: "PhD, Materials Science and Engineering, MIT. Specialize in material characterization and material design.",
     },
 ]
