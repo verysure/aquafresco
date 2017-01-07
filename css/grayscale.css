@@ -441,12 +441,12 @@ body {
 
 #team .container {
     width: 100%;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    /* margin: 0 0 0 0; */
+    /* padding: 0 0 0 0; */
 }
 
 #team {
-    padding-top: 0px;
+    /* padding-top: 0px; */
     font-size: 25px;
 }
 
@@ -458,6 +458,17 @@ body {
     font-size: 35px;
     /*text-shadow: 2px 2px #ff0000;*/
 }
+
+.teamcard {
+    font-size: 35px;
+}
+
+#team .teamcardimg {
+    width: 80%;
+    margin: 0;
+    border-radius: 50%;
+}
+
 
 @media(max-width:767px) {
     #teamnames {

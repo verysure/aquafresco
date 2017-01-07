@@ -9,6 +9,38 @@ Credit
 
 Webdesign by Verysure. Photocredit to Yu-Hsin Chen.
 
+
+Development
+===========
+
+Setup Environment
+-----------------
+
+Install [ruby](https://www.ruby-lang.org/en/downloads/)
+
+Install `bundler`:
+
+    sudo gem install bundler
+
+Install github-pages gem from `Gemfile`:
+
+    bundle install
+
+*If encounter error, install `ruby-dev`*
+
+Update github-pages gem:
+
+    bundle update
+
+
+Testing
+-------
+
+Start Jekyll for testing:
+
+    bundle exec jekyll serve
+
+
 License
 -------
 

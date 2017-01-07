@@ -96,11 +96,20 @@
     <section id="team" class="content-section text-center">
       <div class="download-section">
         <div class="container">
-            <h2>Meet AquaFresco Team</h2><img src="{{site.baseurl}}/img/team_bg.jpg"/>
-          <div id="teamnames" class="row">
+          <!-- <img src="{{site.baseurl}}/img/team_bg.jpg"/> -->
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>Meet AquaFresco Team</h2> 
+            </div>
+
             {% for info in site.data.teaminfo %}
-            <div data-toggle="popover" data-trigger="hover" title="{{info.name}} ({{info.title}})" data-content="{{info.description}}" data-placement="top" class="col-xs-4">
-                {{info.name}}
+            <div data-toggle="popover" data-trigger="hover" title="{{info.name}} ({{info.title}})" data-content="{{info.description}}" data-placement="top" class="col-xs-4 teamcard">
+              {% if info.photo != null %}
+                <img src="{{site.baseurl}}/img/{{info.photo}}.png" class='teamcardimg'>
+              {% else %}
+                <img src="{{site.baseurl}}/img/default.png" class='teamcardimg'>
+              {% endif %}
+              <div>{{info.name}}</div>
             </div>
             {% endfor %}
           </div>
