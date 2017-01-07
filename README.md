@@ -20,7 +20,7 @@ Install [ruby](https://www.ruby-lang.org/en/downloads/)
 
 Install `bundler`:
 
-    sudo gem install bundler
+    sudo gem install jekyll bundler
 
 Install github-pages gem from `Gemfile`:
 
