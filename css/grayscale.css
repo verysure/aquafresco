@@ -465,7 +465,7 @@ body {
 
 #team .teamcardimg {
     width: 70%;
-    margin: 0;
+    margin: 5px 5px 5px 5px;
     border-radius: 50%;
 }
 @media(max-width:767px) {
