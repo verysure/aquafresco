@@ -1,18 +1,39 @@
 [
     {
-        name: "Alina Rwei",
-        title: "Chief Scientist",
-        description: "PhD candidate in Materials Science and Engineering, MIT. Specialize in polymer science and processing.",
+        name: "Sasha Huang",
+        title: "CEO",
+        description: "PhD, Materials Science and Engineering, MIT. Specialize in material characterization and material design.",
+        photo: "sashaH.png"
     },
+
     {
         name: "Chris Lai",
         title: "CTO",
         description: "PhD, Chemical Engineering, MIT. Experience in continuous process and hotel business.",
+        photo: "chrisL.png"
     },
     {
-        name: "Sasha Huang",
-        title: "CEO",
-        description: "PhD, Materials Science and Engineering, MIT. Specialize in material characterization and material design.",
-        photo: "default.png"
+        name: "Alina Rwei",
+        title: "Chief Scientist",
+        description: "PhD candidate in Materials Science and Engineering, MIT. Specialize in polymer science and processing.",
+        photo: "alinaR.png"
+    },
+    {
+        name: "Russel McAvoy",
+        title: "Product Engineer",
+        description: "BS, Mechenical Engineering, University of Pennsylvania. Master builder of the team.",
+        photo: "russelM.png"
+    },
+    {
+        name: "Matthew Cavallaro",
+        title: "Product Engineer",
+        description: "BS, Chemical/Computer Engineering, Northeastern University. An awesome software and hardware developer.",
+        photo: "mattC.png"
+    },
+    {
+        name: "Rahul Shivramkrishnan",
+        title: "Product Engineer",
+        description: "MS, Electrical Engineering, Northeastern University. The control/power system builder." ,
+        photo: "rahulS.png"
     },
 ]
