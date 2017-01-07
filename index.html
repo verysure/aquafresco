@@ -105,7 +105,7 @@
             {% for info in site.data.teaminfo %}
             <div data-toggle="popover" data-trigger="hover" title="{{info.name}} ({{info.title}})" data-content="{{info.description}}" data-placement="top" class="col-xs-4 teamcard">
               {% if info.photo != null %}
-                <img src="{{site.baseurl}}/img/{{info.photo}}.png" class='teamcardimg'>
+                <img src="{{site.baseurl}}/img/{{info.photo}}" class='teamcardimg'>
               {% else %}
                 <img src="{{site.baseurl}}/img/default.png" class='teamcardimg'>
               {% endif %}
