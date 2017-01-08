@@ -105,15 +105,17 @@
                 <img src="{{site.baseurl}}/img/default.png" class='teamcardimg'>
               {% endif %}
               <div>{{site.data.teaminfo[i].name}}</div>
+            </div>
 
               <!-- insert row -->
               {% assign j = i | modulo: 3 %}
               {% if j == 2 %}
-                </div><div class="row">
+                </div>
+                <div class="row">
               {% endif %}
-            </div>
             {% endfor %}
           </div>
+
         </div>
       </div>
     </section>
