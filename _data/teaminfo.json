@@ -17,5 +17,33 @@
         title: "Chief Scientist",
         description: "PhD candidate in Materials Science and Engineering, MIT. Specialize in polymer science and processing.",
         photo: "alinaR.png"
+    },
+    
+    {
+        name: "Russel McAvoy",
+        title: "Product Engineer",
+        description: "BS, Mechanical Engineering, University of Pennsylvania. Master builder of the team.",
+        photo: "russelM.png"
+    },
+    
+    {
+        name: "Matthew Cavallaro",
+        title: "Product Engineer",
+        description: "BS, Chemical/Computer Engineering, Northeastern University. An awesome software and hardware developer.",
+        photo: "mattC.png"
+    },
+    
+    {
+        name: "Rahul Shivramkrishnan",
+        title: "Product Engineer",
+        description: "MS, Electrical Engineering, Northeastern University. The control/power system builder." ,
+        photo: "rahulS.png"
+    },
+    
+    {
+        name: "Alon Duvall",
+        title: "Intern",
+        description: "As a chemical engineering student at Northeastern University. Alon is passionate about mathematical sciences and is constantly striving for a broad understanding of many scientific topics.",
+        photo: "alonD.png"
     }
 ]
